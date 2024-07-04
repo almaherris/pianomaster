@@ -1,3 +1,7 @@
 export const Hem = () => {
-  return <div>Hem</div>
+  return (
+    <div>
+      <h2>Hem</h2>
+    </div>
+  )
 }
