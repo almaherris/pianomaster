@@ -1,7 +1,11 @@
 .navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   gap: 20px;
   background-color: lightblue;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
 }

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Hem } from "./pages/Hem"
 import { Butik } from "./pages/Butik"
 import { Flyglar } from "./pages/Flyglar"
@@ -12,9 +12,6 @@ export const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Link to="/">
-          <h1>Titel </h1>
-        </Link>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Hem />} />
