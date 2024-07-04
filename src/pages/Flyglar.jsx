@@ -1,6 +1,3 @@
-
 export const Flyglar = () => {
-  return (
-    <div>Flyglar</div>
-  )
+  return <div>Flyglar</div>
 }

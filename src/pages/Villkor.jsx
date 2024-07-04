@@ -1,6 +1,3 @@
-
 export const Villkor = () => {
-  return (
-    <div>Villkor</div>
-  )
+  return <div>Köpvillkor</div>
 }

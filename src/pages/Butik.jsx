@@ -1,6 +1,3 @@
-
 export const Butik = () => {
-  return (
-    <div>Butik</div>
-  )
+  return <div>Butik</div>
 }

@@ -6,9 +6,6 @@ export const NavBar = () => {
     <div>
       <ul className="navbar">
         <li>
-          <Link to={"/"}>Hem</Link>
-        </li>
-        <li>
           <Link to={"/butik"}>Butiken</Link>
         </li>
         <li>
@@ -19,6 +16,9 @@ export const NavBar = () => {
         </li>
         <li>
           <Link to={"/kontakt"}>Kontakt</Link>
+        </li>
+        <li>
+          <Link to={"/kopvillkor"}>Köpvillkor</Link>
         </li>
       </ul>
     </div>

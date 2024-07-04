@@ -1,6 +1,3 @@
-
 export const Piano = () => {
-  return (
-    <div>Piano</div>
-  )
+  return <div>Piano</div>
 }
