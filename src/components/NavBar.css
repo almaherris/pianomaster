@@ -4,11 +4,20 @@
 
 .navsection-phone {
   display: block;
+  background-color: black;
+  color: white;
+  border: solid yellow;
+}
+
+.hamburger-icon {
+  font-size: 40px;
+  padding-top: 5px;
 }
 
 .navigation {
   display: flex;
   gap: 20px;
+  border: solid blue;
 }
 
 ul {
@@ -20,19 +29,20 @@ ul {
 }
 
 li {
-  margin-bottom: 10px;
+  margin: 0 0 10px 10px;
   font-size: 16px;
+}
+
+li:hover {
+  text-decoration: underline;
 }
 
 .dropdown-menu {
   position: absolute;
-  left: 0;
-  background-color: var(--color-2);
   width: 100%;
   display: none;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.75);
-
+  background: black;
 }
 
 .dropdown-menu.open {
@@ -57,6 +67,7 @@ li {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-    background-color: lightblue;
+    background-color: black;
+    color: white;
   }
 }
