@@ -1,7 +1,7 @@
 import { HeroSection } from "../components/HeroSection"
 import { WelcomeSection } from "../components/WelcomeSection"
 
-export const Hem = () => {
+export const LandingPage = () => {
   return (
     <div>
       <HeroSection />

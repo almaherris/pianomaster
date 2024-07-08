@@ -51,7 +51,9 @@ export const NavBar = () => {
           </ul>
         </div>
         <div>
-          <Link to="/">PianoMäster</Link>
+          <Link to="/" onClick={closeMenu}>
+            PianoMäster
+          </Link>
         </div>
       </nav>
 

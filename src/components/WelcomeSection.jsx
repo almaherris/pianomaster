@@ -1,4 +1,4 @@
-import { Button } from "../reusable/Button"
+import { Button } from "./Button"
 import "./WelcomeSection.css"
 
 export const WelcomeSection = () => {
@@ -6,10 +6,12 @@ export const WelcomeSection = () => {
     <div className="welcome-section">
       <h2>Välkommen!</h2>
       <p className="welcome-text">
-        Vi på Pianomäster lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Sed blandit pharetra lorem quis hendrerit. Mauris elementum lorem
-        sem, eget consequat tortor accumsan sed. Etiam congue, libero non tempus
-        euismod, sem orci venenatis leo, ut condimentum
+        PianoMäster är auktoriserad återförsäljare av WILH. STEINBERG (etabl.
+        1877) och FEURICH (etabl. 1851) i Sverige. I vårt showroom finns alltid
+        ett stort urval av nya flyglar och pianon från dessa båda tyska
+        tillverkare av kvalitetsinstrument. Stort utval av begagnade och
+        renoverade instrument med upp till 5 års garanti t.ex. Bechstein,
+        Blüthner, Grotrian Steinweg, Schimmel, Steinway och Malmsjö.
       </p>
       <p>
         säljer - köper - renovering - pianostämning - lackering - transport -

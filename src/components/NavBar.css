@@ -11,6 +11,10 @@
   padding-right: 20px;
 }
 
+.navsection-phone li {
+padding: 5px;
+}
+
 .hamburger-icon {
   font-size: 44px;
   padding: 8px 0 0 10px;
