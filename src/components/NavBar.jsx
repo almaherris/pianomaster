@@ -18,41 +18,41 @@ export const NavBar = () => {
     <>
       {/* Phone */}
       <nav className="navsection-phone">
-          <div className="hamburger-icon" onClick={toggleMenu}>
-            {showMenu ? <RiCloseLine /> : <RiMenuLine />}
-          </div>
-          <div className={`dropdown-menu ${showMenu ? "open" : ""}`}>
-            <ul>
-              <li>
-                <Link to={"/butik"} onClick={closeMenu}>
-                  Butiken
-                </Link>
-              </li>
-              <li>
-                <Link to={"/flyglar"} onClick={closeMenu}>
-                  Flyglar
-                </Link>
-              </li>
-              <li>
-                <Link to={"/piano"} onClick={closeMenu}>
-                  Pianon
-                </Link>
-              </li>
-              <li>
-                <Link to={"/kontakt"} onClick={closeMenu}>
-                  Kontakt
-                </Link>
-              </li>
-              <li>
-                <Link to={"/kopvillkor"} onClick={closeMenu}>
-                  Köpvillkor
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <Link to="/">PianoMäster</Link>
-          </div>
+        <div className="hamburger-icon" onClick={toggleMenu}>
+          {showMenu ? <RiCloseLine /> : <RiMenuLine />}
+        </div>
+        <div className={`dropdown-menu ${showMenu ? "open" : ""}`}>
+          <ul>
+            <li>
+              <Link to={"/butik"} onClick={closeMenu}>
+                Butiken
+              </Link>
+            </li>
+            <li>
+              <Link to={"/flyglar"} onClick={closeMenu}>
+                Flyglar
+              </Link>
+            </li>
+            <li>
+              <Link to={"/piano"} onClick={closeMenu}>
+                Pianon
+              </Link>
+            </li>
+            <li>
+              <Link to={"/kontakt"} onClick={closeMenu}>
+                Kontakt
+              </Link>
+            </li>
+            <li>
+              <Link to={"/tjanster"} onClick={closeMenu}>
+                Tjänster
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <Link to="/">PianoMäster</Link>
+        </div>
       </nav>
 
       {/* Tablet */}
@@ -74,7 +74,7 @@ export const NavBar = () => {
             <Link to={"/kontakt"}>Kontakt</Link>
           </li>
           <li>
-            <Link to={"/kopvillkor"}>Köpvillkor</Link>
+            <Link to={"/tjanster"}>Tjänster</Link>
           </li>
         </ul>
       </nav>

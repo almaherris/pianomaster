@@ -17,12 +17,13 @@
   position: absolute;
   bottom: 50px;
   left: 20px;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 h1 {
   font-family: "Inria Serif", serif;
   color: var(--white);
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -30,5 +31,9 @@ h1 {
     position: absolute;
     bottom: 80px;
     left: 70px;
+  }
+
+  h1 {
+    font-size: 48px;
   }
 }

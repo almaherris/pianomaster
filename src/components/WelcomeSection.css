@@ -1,0 +1,49 @@
+.welcome-section {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+p {
+  margin-bottom: 60px;
+}
+
+.welcome-text {
+  max-width: 1000px;
+}
+
+.button-div {
+  margin-bottom: 60px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.partners img {
+  max-width: 150px;
+  height: auto;
+}
+
+@media (min-width: 500px) {
+  .partners {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) {
+  .welcome-section {
+    padding: 80px;
+    text-align: left;
+  }
+}

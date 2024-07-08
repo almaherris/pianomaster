@@ -5,7 +5,7 @@ export const HeroSection = () => {
     <div className="hero">
       <div className="hero-content">
         <h1>
-          Någonting om pianomäster(s) nya och renoverade pianon och flyglar
+          Någonting om pianomästers nya och renoverade pianon och flyglar
         </h1>
       </div>
     </div>

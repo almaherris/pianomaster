@@ -3,7 +3,7 @@ import { Hem } from "./pages/Hem"
 import { Butik } from "./pages/Butik"
 import { Flyglar } from "./pages/Flyglar"
 import { Piano } from "./pages/Piano"
-import { Villkor } from "./pages/Villkor"
+import { Services } from "./pages/Services"
 import { Kontakt } from "./pages/Kontakt"
 import { Layout } from "./Layout"
 import "./App.css"
@@ -18,7 +18,7 @@ export const App = () => {
             <Route path="/butik" element={<Butik />} />
             <Route path="/flyglar" element={<Flyglar />} />
             <Route path="/piano" element={<Piano />} />
-            <Route path="/kopvillkor" element={<Villkor />} />
+            <Route path="/tjanster" element={<Services />} />
             <Route path="/kontakt" element={<Kontakt />} />
           </Route>
         </Routes>
