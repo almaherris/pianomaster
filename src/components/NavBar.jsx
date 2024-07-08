@@ -17,8 +17,7 @@ export const NavBar = () => {
   return (
     <>
       {/* Phone */}
-      <div className="navsection-phone">
-        <div className="navsection-phone-container">
+      <nav className="navsection-phone">
           <div className="hamburger-icon" onClick={toggleMenu}>
             {showMenu ? <RiCloseLine /> : <RiMenuLine />}
           </div>
@@ -54,11 +53,10 @@ export const NavBar = () => {
           <div>
             <Link to="/">PianoMäster</Link>
           </div>
-        </div>
-      </div>
+      </nav>
 
       {/* Tablet */}
-      <div className="navsection-tablet">
+      <nav className="navsection-tablet">
         <div>
           <Link to="/">PianoMäster</Link>
         </div>
@@ -79,7 +77,7 @@ export const NavBar = () => {
             <Link to={"/kopvillkor"}>Köpvillkor</Link>
           </li>
         </ul>
-      </div>
+      </nav>
     </>
   )
 }

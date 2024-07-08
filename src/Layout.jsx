@@ -5,7 +5,7 @@ export const Layout = () => {
   return (
     <>
       <NavBar />{" "}
-      <main id="content">
+      <main className="app-container" id="content">
         <Outlet />
       </main>
     </>

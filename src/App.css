@@ -1,8 +1,13 @@
+:root {
+  --black: #1e1e1e;
+  --grey: #555454;
+  --white: #f9f9f9;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {
