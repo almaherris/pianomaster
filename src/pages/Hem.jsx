@@ -1,9 +1,12 @@
-import { Hero } from "../components/Hero"
+import { HeroSection } from "../components/HeroSection"
+import { Button } from "../reusable/Button"
 
 export const Hem = () => {
   return (
     <div>
-      <Hero />
+      <HeroSection />
+
+      <Button buttonText="Till Tjänster" />
     </div>
   )
 }
