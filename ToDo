@@ -1,2 +1,19 @@
-Kontakt: lägg till karta, kolla sofia och natalies
+- Kontakt: lägg till karta, kolla sofia och natalies
 om oss
+
+- Barrel import index file
+components/index.js
+export { default as Button } from './Button/Button';
+export { default as UserProfile } from './UserProfile/UserProfile';
+
+App.jsx:
+import { Button, UserProfile } from './components';
+
+const App = () => (
+  <div>
+    <Button buttonText="Click Me" />
+    <UserProfile />
+  </div>
+);
+
+export default App;

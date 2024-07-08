@@ -18,7 +18,7 @@ export const App = () => {
             <Route index element={<LandingPage />} />
             <Route path="/butik" element={<Butik />} />
             <Route path="/flyglar" element={<Flyglar />} />
-            <Route path="/piano" element={<Piano />} />
+            <Route path="/pianon" element={<Piano />} />
             <Route path="/tjanster" element={<Services />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="*" element={<NotFound />} />

@@ -34,7 +34,7 @@ export const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to={"/piano"} onClick={closeMenu}>
+              <Link to={"/pianon"} onClick={closeMenu}>
                 Pianon
               </Link>
             </li>
@@ -70,7 +70,7 @@ export const NavBar = () => {
             <Link to={"/flyglar"}>Flyglar</Link>
           </li>
           <li>
-            <Link to={"/piano"}>Pianon</Link>
+            <Link to={"/pianon"}>Pianon</Link>
           </li>
           <li>
             <Link to={"/kontakt"}>Kontakt</Link>
