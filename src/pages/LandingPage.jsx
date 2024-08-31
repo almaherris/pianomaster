@@ -1,8 +1,8 @@
 import { HeroSection } from "../components/LandingPage/HeroSection"
 import { OfferSection } from "../components/LandingPage/OfferSection"
 import { WelcomeSection } from "../components/LandingPage/WelcomeSection"
-import PianoImg from "../assets/piano/piano2.jpg"
-import FlygelImg from "../assets/flygel/flygel1.jpg"
+import PianoImg from "/piano/piano2.jpg"
+import FlygelImg from "/flygel/flygel1.jpg"
 import "./LandingPage.css"
 
 export const LandingPage = () => {
