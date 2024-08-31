@@ -12,19 +12,21 @@ export const OfferSection = ({
   imgPosition,
 }) => {
   return (
-    <div className={`offer-section ${imgPosition}`}>
-      <div className="text-section">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <Button
-          buttonText={buttonText}
-          link={link}
-          aria-label={ariaLabel}
-        />{" "}
-      </div>
+    <div className="offer-section-wrapper">
+      <div className={`offer-section ${imgPosition}`}>
+        <div className="text-section">
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <Button
+            buttonText={buttonText}
+            link={link}
+            aria-label={ariaLabel}
+          />{" "}
+        </div>
 
-      <div className="img-container">
-        <img src={imgSrc} alt={title} />
+        <div className="img-container">
+          <img src={imgSrc} alt={title} />
+        </div>
       </div>
     </div>
   )
