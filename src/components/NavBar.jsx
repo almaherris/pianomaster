@@ -39,20 +39,24 @@ export const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link to={"/kontakt"} onClick={closeMenu}>
-                Kontakt
-              </Link>
-            </li>
-            <li>
               <Link to={"/tjanster"} onClick={closeMenu}>
                 Tjänster
+              </Link>
+            </li>{" "}
+            <li>
+              <Link to={"/kontakt"} onClick={closeMenu}>
+                Kontakt
               </Link>
             </li>
           </ul>
         </div>
         <div>
           <Link to="/" onClick={closeMenu}>
-            PianoMäster
+            <img
+              className="navbar-logo"
+              src="/logos/pm-logo.png"
+              alt="Pianomäster Logo"
+            />
           </Link>
         </div>
       </nav>
@@ -60,7 +64,13 @@ export const NavBar = () => {
       {/* Tablet */}
       <nav className="navsection-tablet">
         <div>
-          <Link to="/">PianoMäster</Link>
+          <Link to="/">
+            <img
+              className="navbar-logo"
+              src="/logos/pm-logo.png"
+              alt="Pianomäster Logo"
+            />
+          </Link>
         </div>
         <ul className="navigation">
           <li>
@@ -71,12 +81,12 @@ export const NavBar = () => {
           </li>
           <li>
             <Link to={"/pianon"}>Pianon</Link>
+          </li>{" "}
+          <li>
+            <Link to={"/tjanster"}>Tjänster</Link>
           </li>
           <li>
             <Link to={"/kontakt"}>Kontakt</Link>
-          </li>
-          <li>
-            <Link to={"/tjanster"}>Tjänster</Link>
           </li>
         </ul>
       </nav>
