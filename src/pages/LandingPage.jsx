@@ -4,6 +4,7 @@ import { WelcomeSection } from "../components/LandingPage/WelcomeSection"
 import PianoImg from "/piano/piano2.jpg"
 import FlygelImg from "/flygel/flygel1.jpg"
 import "./LandingPage.css"
+import { CTA } from "../components/LandingPage/CTA"
 
 export const LandingPage = () => {
   return (
@@ -31,6 +32,7 @@ export const LandingPage = () => {
             imgPosition="left"
           />{" "}
         </div>
+        <CTA />
       </div>
     </div>
   )

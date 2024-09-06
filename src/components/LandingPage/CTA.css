@@ -1,0 +1,21 @@
+.cta-wrapper {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box {
+  border: 1px solid black;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
