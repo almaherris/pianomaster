@@ -1,4 +1,4 @@
-button {
+.button-default {
   height: 40px;
   width: 160px;
   background-color: var(--black);
@@ -7,12 +7,22 @@ button {
   border: none;
 }
 
+.button-alternate {
+  height: 40px;
+  width: 160px;
+  background-color: white;
+  color: var(--black);
+  font-size: 16px;
+  border: 1px solid black;
+}
+
 button:hover {
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  button {
+  .button-default,
+  .button-alternate {
     height: 50px;
     min-width: 200px;
   }
