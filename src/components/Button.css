@@ -10,7 +10,7 @@
 .button-alternate {
   height: 40px;
   width: 160px;
-  background-color: white;
+  background-color: F9F9F9;
   color: var(--black);
   font-size: 16px;
   border: 1px solid black;

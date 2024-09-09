@@ -19,6 +19,10 @@ export const CTA = () => {
             variant="alternate"
           />
         </div>
+        <div className="cta-box-dot dot-top-left"></div>
+        <div className="cta-box-dot dot-top-right"></div>
+        <div className="cta-box-dot dot-bottom-left"></div>
+        <div className="cta-box-dot dot-bottom-right"></div>
       </div>
     </div>
   )

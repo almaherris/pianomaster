@@ -8,16 +8,49 @@
   border: 1px solid black;
   height: 400px;
   width: 100%;
+  max-width: 1070px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
+
+.cta-box-dot {
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dot-top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.dot-top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.dot-bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.dot-bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+
 
 .cta-text {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .cta-text h4 {
