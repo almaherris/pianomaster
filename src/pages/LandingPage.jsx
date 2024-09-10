@@ -5,6 +5,7 @@ import PianoImg from "/piano/piano2.jpg"
 import FlygelImg from "/flygel/flygel1.jpg"
 import "./LandingPage.css"
 import { CTA } from "../components/LandingPage/CTA"
+import { MapSection } from "../components/LandingPage/MapSection"
 
 export const LandingPage = () => {
   return (
@@ -33,6 +34,7 @@ export const LandingPage = () => {
           />{" "}
         </div>
         <CTA />
+        <MapSection />
       </div>
     </div>
   )

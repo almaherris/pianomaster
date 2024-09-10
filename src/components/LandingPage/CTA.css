@@ -1,5 +1,5 @@
 .cta-wrapper {
-  margin: 100px 0;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
 }
@@ -45,8 +45,6 @@
   right: 10px;
 }
 
-
-
 .cta-text {
   display: flex;
   flex-direction: column;
@@ -56,4 +54,10 @@
 .cta-text h4 {
   font-size: 32px;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .cta-wrapper {
+    margin: 100px 0;
+  }
 }
