@@ -8,17 +8,24 @@ export const MapSection = () => {
     <div className="map-section">
       <div className="text-container">
         <p>ADRESS & KONTAKT</p>
-        <p>PianoMäster</p>
+        <p className="company-name">PianoMäster</p>
         <p>
           Butiken ligger i samma lokaler som Allmusikverkstan som du hittar i
           centrala Skövde vid Hertig Johans Torg. Bakom Mamma Mia, en trappa
           ner.{" "}
         </p>
-        <p>Storgatan 12A </p>
-        <p>541 30 Skövde</p>
+        <div>
+          <p>Storgatan 12A </p>
+          <p>541 30 Skövde</p>
+        </div>
+        <div className="contact-information">
+          <p>0707-999 138</p>
 
-        <p>0707-999 138</p>
-        <p>info@pianomaster.se</p>
+          <p>
+            {" "}
+            <a href="mailto:info@pianomaster.se">info@pianomaster.se</a>
+          </p>
+        </div>
       </div>
       <div className="map-container">
         <iframe

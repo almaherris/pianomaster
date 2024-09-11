@@ -1,6 +1,7 @@
 .map-section {
   display: flex;
   flex-direction: column;
+  margin-bottom: 160px;
 }
 
 .text-container {
@@ -18,11 +19,11 @@
   font-size: 12px;
 }
 
-.text-container p:first-of-type {
+.text-container > p:first-of-type {
   font-size: 14px;
 }
 
-.text-container p:nth-of-type(2) {
+.text-container > p:nth-of-type(2) {
   font-size: 28px;
   margin: 15px 0;
 }
@@ -31,8 +32,15 @@
 .map-container {
   width: 100%;
   max-width: 1070px;
-  height: 300px;
+  height: 400px;
   margin: 0 auto;
+}
+
+.contact-information {
+  border-top: 0.5px solid var(--white);
+  padding: 20px 0;
+  margin: 20px 0;
+  max-width: 600px;
 }
 
 @media (min-width: 550px) {
@@ -52,7 +60,11 @@
     padding-left: 40px;
   }
 
-  .text-container p:nth-of-type(2) {
+  .text-container > p:nth-of-type(2) {
     font-size: 36px;
+  }
+
+  .text-container > p:nth-of-type(3) {
+    max-width: 500px;
   }
 }
