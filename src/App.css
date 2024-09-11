@@ -21,3 +21,13 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+main {
+  padding-top: 65px;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 75px;
+  }
+}

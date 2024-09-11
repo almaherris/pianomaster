@@ -15,7 +15,7 @@ export const NavBar = () => {
   }
 
   return (
-    <>
+    <div className="navbar">
       {/* Phone */}
       <nav className="navsection-phone">
         <div className="hamburger-icon" onClick={toggleMenu}>
@@ -100,6 +100,6 @@ export const NavBar = () => {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   )
 }
