@@ -1,7 +1,7 @@
 .map-section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 160px;
+  margin-bottom: 120px;
 }
 
 .text-container {
@@ -31,15 +31,14 @@
 .text-container,
 .map-container {
   width: 100%;
-  max-width: 1070px;
   height: 400px;
   margin: 0 auto;
 }
 
 .contact-information {
   border-top: 0.5px solid var(--white);
-  padding: 20px 0;
-  margin: 20px 0;
+  padding-top: 20px;
+  margin-top: 20px;
   max-width: 600px;
 }
 

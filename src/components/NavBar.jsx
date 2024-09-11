@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { RiCloseLine, RiMenuLine } from "react-icons/ri"
 import { useState } from "react"
 import "./NavBar.css"
@@ -22,31 +22,31 @@ export const NavBar = () => {
           {showMenu ? <RiCloseLine /> : <RiMenuLine />}
         </div>
         <div className={`dropdown-menu ${showMenu ? "open" : ""}`}>
-          <ul>
+        <ul>
             <li>
-              <Link to={"/butik"} onClick={closeMenu}>
+              <NavLink to="/butik" onClick={closeMenu} className={({ isActive }) => (isActive ? "active-link" : "")}>
                 Butiken
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/flyglar"} onClick={closeMenu}>
+              <NavLink to="/flyglar" onClick={closeMenu} className={({ isActive }) => (isActive ? "active-link" : "")}>
                 Flyglar
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/pianon"} onClick={closeMenu}>
+              <NavLink to="/pianon" onClick={closeMenu} className={({ isActive }) => (isActive ? "active-link" : "")}>
                 Pianon
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/tjanster"} onClick={closeMenu}>
+              <NavLink to="/tjanster" onClick={closeMenu} className={({ isActive }) => (isActive ? "active-link" : "")}>
                 Tjänster
-              </Link>
-            </li>{" "}
+              </NavLink>
+            </li>
             <li>
-              <Link to={"/kontakt"} onClick={closeMenu}>
+              <NavLink to="/kontakt" onClick={closeMenu} className={({ isActive }) => (isActive ? "active-link" : "")}>
                 Kontakt
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -61,7 +61,7 @@ export const NavBar = () => {
         </div>
       </nav>
 
-      {/* Tablet */}
+      {/* Tablet and up*/}
       <nav className="navsection-tablet">
         <div>
           <Link to="/">
@@ -74,19 +74,29 @@ export const NavBar = () => {
         </div>
         <ul className="navigation">
           <li>
-            <Link to={"/butik"}>Butiken</Link>
+            <NavLink to="/butik" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Butiken
+            </NavLink>
           </li>
           <li>
-            <Link to={"/flyglar"}>Flyglar</Link>
+            <NavLink to="/flyglar" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Flyglar
+            </NavLink>
           </li>
           <li>
-            <Link to={"/pianon"}>Pianon</Link>
-          </li>{" "}
-          <li>
-            <Link to={"/tjanster"}>Tjänster</Link>
+            <NavLink to="/pianon" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Pianon
+            </NavLink>
           </li>
           <li>
-            <Link to={"/kontakt"}>Kontakt</Link>
+            <NavLink to="/tjanster" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Tjänster
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/kontakt" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Kontakt
+            </NavLink>
           </li>
         </ul>
       </nav>
