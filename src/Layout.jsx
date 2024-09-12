@@ -9,7 +9,7 @@ export const Layout = () => {
       <main className="app-container" id="content">
         <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </>
   )
 }

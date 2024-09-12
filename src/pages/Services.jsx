@@ -17,6 +17,10 @@ export const Services = () => {
         Om du vill veta mer eller har några specifika frågor, är du välkommen
         att fråga.
       </p>
+      <div className="partners">
+        <img src="/logos/feurich-logo.svg" />
+        <img src="/logos/steinberg-logo.svg" />
+      </div>
     </div>
   )
 }
