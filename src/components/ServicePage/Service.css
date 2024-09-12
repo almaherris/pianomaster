@@ -1,3 +1,21 @@
 .service {
-  border: solid red;
+  display: flex;
+  flex-direction: column;
+  border: solid green;
+  gap: 30px;
+}
+
+.service-description {
+  flex: 2;
+}
+
+.service-pricing {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .service {
+    flex-direction: row;
+    gap: 100px;
+  }
 }

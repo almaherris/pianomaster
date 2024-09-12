@@ -10,11 +10,18 @@ export const Service = ({
 }) => {
   return (
     <div className="service">
-      service
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <h3>{pricingTitle}</h3>
-      <p>{pricingDescription}</p>
+      <div className="service-description">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+      <div className="service-pricing">
+        <h3>{pricingTitle}</h3>
+        <ul>
+          {pricingDescription.map((price, index) => (
+            <li key={index}>{price}</li>
+          ))}
+        </ul>{" "}
+      </div>
     </div>
   )
 }
@@ -23,5 +30,5 @@ Service.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   pricingTitle: PropTypes.string,
-  pricingDescription: PropTypes.string,
+  pricingDescription: PropTypes.arrayOf(PropTypes.string),
 }

@@ -1,0 +1,31 @@
+.service-message {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border: solid blue;
+  margin-top: 80px;
+}
+
+.service-page {
+  padding: 50px 40px;
+}
+
+@media (min-width: 768px) {
+  .service-page {
+    padding: 80px 80px 40px 80px;
+  }
+
+  .service-container {
+    gap: 80px;
+}
+}
