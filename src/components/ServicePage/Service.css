@@ -1,7 +1,6 @@
 .service {
   display: flex;
   flex-direction: column;
-  border: solid green;
   gap: 30px;
 }
 
