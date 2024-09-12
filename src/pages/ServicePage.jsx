@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Service } from "../components/ServicePage/Service"
 
 export const Services = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ export const Services = () => {
         <img src="/logos/feurich-logo.svg" />
         <img src="/logos/steinberg-logo.svg" />
       </div>
+      <Service />
     </div>
   )
 }

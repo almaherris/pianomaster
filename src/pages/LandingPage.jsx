@@ -34,8 +34,8 @@ export const LandingPage = () => {
           />{" "}
         </div>
         <CTA />
-      </div>        <MapSection />
-
+      </div>{" "}
+      <MapSection />
     </div>
   )
 }
