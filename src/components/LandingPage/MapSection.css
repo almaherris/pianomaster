@@ -1,7 +1,6 @@
 .map-section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 120px;
 }
 
 .text-container {
@@ -45,6 +44,7 @@
 @media (min-width: 550px) {
   .map-section {
     flex-direction: row;
+    margin-bottom: 120px;
   }
 }
 

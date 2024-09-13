@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { HeroSection } from "../components/LandingPage/HeroSection"
 import { OfferSection } from "../components/LandingPage/OfferSection"
 import { WelcomeSection } from "../components/LandingPage/WelcomeSection"
@@ -8,6 +9,10 @@ import { CTA } from "../components/LandingPage/CTA"
 import { MapSection } from "../components/LandingPage/MapSection"
 
 export const LandingPage = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <div>
       <HeroSection />
