@@ -20,6 +20,10 @@ export const Services = () => {
             under samma resa för att hålla nere resekostnaden för våra kunder.
           </p>
           <p>
+            Vi lämnar 5 års garanti på begagnade akustiska pianon och flyglar
+            liksom 1 styck fri garantistämning efter leverans.
+          </p>{" "}
+          <p>
             {" "}
             Om du vill veta mer eller har några specifika frågor, är du
             välkommen att fråga.

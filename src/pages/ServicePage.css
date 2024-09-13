@@ -17,6 +17,7 @@
 
 .service-page {
   padding: 50px 40px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
@@ -26,5 +27,5 @@
 
   .service-container {
     gap: 80px;
-}
+  }
 }

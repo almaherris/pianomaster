@@ -1,6 +1,5 @@
 .contact-form-wrapper {
   margin: 0 auto;
-  margin-top: 100px;
   padding: 80px 40px;
   background-color: #f7f7f7;
 }
@@ -73,6 +72,11 @@ textarea {
   .contact-form-container {
     max-width: 750px;
     margin: auto;
+  }
+
+  .contact-form-wrapper{
+    margin-top: 100px;
+
   }
 
   .form-row {
