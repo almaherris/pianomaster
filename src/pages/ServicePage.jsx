@@ -16,7 +16,7 @@ export const Services = () => {
         <div className="service-message">
           <h2>Tjänster</h2>
           <p>
-            Vår ambitionen är att erbjuda möjligheten att kombinera flera besök
+            Vår ambition är att erbjuda möjligheten att kombinera flera besök
             under samma resa för att hålla nere resekostnaden för våra kunder.
           </p>
           <p>
@@ -24,7 +24,9 @@ export const Services = () => {
             Om du vill veta mer eller har några specifika frågor, är du
             välkommen att fråga.
           </p>
-          <p>Alla priser är inklusive moms</p>
+          <p>
+            <i>Alla priser är inklusive moms</i>
+          </p>
         </div>
         <div className="partners">
           <img src="/logos/feurich-logo.svg" />

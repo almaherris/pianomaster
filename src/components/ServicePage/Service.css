@@ -2,14 +2,24 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: auto;
+}
+.service-description p {
+  margin-top: 20px;
+}
+
+.service-pricing h3 {
+  font-size: 16px;
 }
 
 .service-description {
   flex: 2;
+  max-width: 620px;
 }
 
 .service-pricing {
   flex: 1;
+  max-width: 300px;
 }
 
 @media (min-width: 768px) {

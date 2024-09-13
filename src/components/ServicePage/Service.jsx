@@ -12,7 +12,9 @@ export const Service = ({
     <div className="service">
       <div className="service-description">
         <h2>{title}</h2>
-        <p>{description}</p>
+        {description.map((description, index) => (
+          <p className="" key={index}>{description}</p>
+        ))}
       </div>
       <div className="service-pricing">
         <h3>{pricingTitle}</h3>
