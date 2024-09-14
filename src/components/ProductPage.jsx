@@ -12,9 +12,6 @@ export const ProductPage = ({ title, description }) => {
           <p>{description}</p>
         )}{" "}
       </div>
-      <div className="product-gallery">
-        <p>here goes img gallery</p>{" "}
-      </div>{" "}
     </div>
   )
 }
