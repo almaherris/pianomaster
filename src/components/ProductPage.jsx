@@ -6,7 +6,11 @@ export const ProductPage = ({ title, description }) => {
     <div className="product-page">
       <div className="product-text">
         <h2>{title}</h2>
-        <p>{description}</p>
+        {Array.isArray(description) ? (
+          description.map((paragraph, index) => <p key={index}>{paragraph}</p>)
+        ) : (
+          <p>{description}</p>
+        )}{" "}
       </div>
       <div className="product-gallery">
         <p>here goes img gallery</p>{" "}
@@ -16,6 +20,9 @@ export const ProductPage = ({ title, description }) => {
 }
 
 ProductPage.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
 }

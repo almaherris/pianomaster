@@ -10,7 +10,11 @@ export const Butik = () => {
     <div>
       <ProductPage
         title="Butik"
-        description="Våra flyglar representerar det ultimata inom pianokonst och hantverksskicklighet. Med enastående resonans och en dynamisk ton som fyller rummet, är varje flygel skapad för att möta de högsta kraven från professionella musiker och konserthus. Kombinationen av elegant design och överlägsen akustik gör våra flyglar till ett naturligt val för de som söker en djupare musikalisk upplevelse. Låt dig inspireras av den tidlösa skönheten och det kraftfulla ljudet som bara en flygel kan erbjuda."/>
+        description={[
+          "Hos oss hittar du ett brett utbud av nya och begagnade pianon och flyglar av högsta kvalitet. Vi erbjuder allt från stämning, service och reparation till transport och renovering av ditt instrument.",
+          "Med vår expertis och långa erfarenhet hjälper vi dig att få ut det mesta av ditt piano eller flygel. Välkommen till vår butik, belägen i centrala Skövde, där både musikinstrument och spelglädje står i fokus!",
+        ]}
+      />
     </div>
   )
 }
