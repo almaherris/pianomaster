@@ -5,7 +5,7 @@
       rgba(26, 25, 25, 0.6) 91%,
       #1e1e1edd 100%
     ),
-    url("../../assets/hero-img.jpg");
+    url("/hero-img.jpg");
   background-size: cover;
   background-position: center;
   height: 90vh;
