@@ -16,7 +16,6 @@ export const Butik = () => {
     { src: "/butik/butik6.jpg" },
     { src: "/butik/butik7.jpg" },
     { src: "/butik/butik8.jpg" },
-    { src: "/butik/butik9.jpg" },
   ]
 
   return (
