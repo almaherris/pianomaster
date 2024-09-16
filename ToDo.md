@@ -1,6 +1,5 @@
 fix & styling
 🦋 review paddings, font sizing, etc
-🦋 not-found
 
 optimization
 🦋 consider putting images elsewhere (cloudinary)/svg files/smaller size
@@ -19,3 +18,4 @@ Done
 ✅ reorganize navbar - tjänser, pianon, flyglar, butiken, kontakt
 ✅ image gallery grid styling
 ✅ remove img not needed in assets
+✅ not-found
