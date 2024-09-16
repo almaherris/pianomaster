@@ -29,6 +29,7 @@ export const Piano = () => {
         description={[
           "Våra pianon erbjuder en harmonisk blandning av klassisk skönhet och modern teknik. Varje piano är noggrant tillverkat för att ge en rik och uttrycksfull klang, perfekt för både nybörjare och erfarna musiker.",
           "Med högkvalitativa material och precision i varje detalj, är våra pianon utformade för att inspirera till kreativitet och musikalisk utveckling. Oavsett om du spelar för egen njutning eller inför publik, kommer du att upptäcka ett instrument som levererar på alla nivåer.",
+          "Här finner du ett ungefärligt utbud av pianon som finns i vårt showroom."
         ]}
         section={<Gallery images={pianoImages} />}
 
