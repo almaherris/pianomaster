@@ -1,12 +1,21 @@
-🦋 email backend
-🦋 image gallery
-🦋 consider putting images elsewhere (cloudinary)/svg files/smaller size
+fix & styling
 🦋 review paddings, font sizing, etc
-🦋 emilia review
-🦋 SEO
-🦋 remove img not needed in assets
-🦋 styling gallery
 🦋 not-found
-✅ reorganize navbar  - tjänser, pianon, flyglar, butiken, kontakt
-✅ make dropdown nav close when clicking elsewhere (logo for ex)
 
+optimization
+🦋 consider putting images elsewhere (cloudinary)/svg files/smaller size
+🦋 SEO
+🦋 accessibility
+
+backend
+🦋 email backend
+
+Review
+🦋 emilia review
+🦋 Linus review
+
+Done
+✅ make dropdown nav close when clicking elsewhere (logo for ex)
+✅ reorganize navbar - tjänser, pianon, flyglar, butiken, kontakt
+✅ image gallery grid styling
+✅ remove img not needed in assets
