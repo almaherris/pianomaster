@@ -11,6 +11,15 @@ export const Piano = () => {
     { src: "/piano/piano1.jpg" },
     { src: "/piano/piano2.jpg" },
     { src: "/piano/piano3.jpg" },
+    { src: "/piano/piano4.jpg" },
+    { src: "/piano/piano5.jpg" },
+    { src: "/piano/piano6.jpg" },
+    { src: "/piano/piano7.jpg" },
+    { src: "/piano/piano8.jpg" },
+    { src: "/piano/piano9.jpg" },
+    { src: "/piano/piano10.jpg" },
+    { src: "/piano/piano11.jpg" },
+    { src: "/piano/piano12.jpg" },
   ]
 
   return (
