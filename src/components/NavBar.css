@@ -35,6 +35,7 @@
 
 /*Slide in from left*/
 .dropdown-menu {
+  padding: 10px 0;
   transform: translateX(-100%);
   opacity: 0;
   position: absolute;
@@ -54,6 +55,7 @@
 
 /*SLIDE DOWN FROM TOP
 .dropdown-menu {
+  padding: 10px 0;
   transform: scaleY(0);
   opacity: 0;
   transform-origin: top;
@@ -72,6 +74,7 @@
 
 ORIGINAL NO ANIMATION
 .dropdown-menu {
+  padding: 10px 0;
   display: none;
   position: absolute;
   top: 55px;

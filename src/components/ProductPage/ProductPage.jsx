@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import "./ProductPage.css"
 
-export const ProductPage = ({ title, description }) => {
+export const ProductPage = ({ title, description, section }) => {
   return (
     <div className="product-page">
       <div className="product-text">
@@ -12,6 +12,7 @@ export const ProductPage = ({ title, description }) => {
           <p>{description}</p>
         )}{" "}
       </div>
+      {section && <div className="product-section">{section}</div>}
     </div>
   )
 }
@@ -22,4 +23,5 @@ ProductPage.propTypes = {
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
+  section: PropTypes.element,
 }

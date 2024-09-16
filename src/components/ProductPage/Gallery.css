@@ -6,7 +6,10 @@
 
 .image-grid-item {
   width: 100%;
+  height: 150px;
+  object-fit: cover;
   cursor: pointer;
+  border-radius: 3px;
   transition: transform 0.3s ease;
 }
 

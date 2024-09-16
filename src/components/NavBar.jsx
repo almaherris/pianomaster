@@ -1,12 +1,13 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom"
 import { RiCloseLine, RiMenuLine } from "react-icons/ri"
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import "./NavBar.css"
 
 export const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
+  const menuRef = useRef(null)
 
   const toggleMenu = () => {
     setShowMenu(!showMenu)
@@ -26,6 +27,25 @@ export const NavBar = () => {
     }
   }
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        closeMenu() // Close menu if click is outside of dropdown
+      }
+    }
+
+    if (showMenu) {
+      document.addEventListener("mousedown", handleClickOutside)
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+
+    // Cleanup event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [showMenu])
+
   return (
     <div className="navbar">
       {/* Phone */}
@@ -33,22 +53,16 @@ export const NavBar = () => {
         <div className="hamburger-icon" onClick={toggleMenu}>
           {showMenu ? <RiCloseLine /> : <RiMenuLine />}
         </div>
-        <div className={`dropdown-menu ${showMenu ? "open" : ""}`}>
+        <div
+          ref={menuRef}
+          className={`dropdown-menu ${showMenu ? "open" : ""}`}>
           <ul>
             <li>
               <NavLink
-                to="/butik"
+                to="/tjanster"
                 onClick={closeMenu}
                 className={({ isActive }) => (isActive ? "active-link" : "")}>
-                Butiken
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/flyglar"
-                onClick={closeMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}>
-                Flyglar
+                Tjänster
               </NavLink>
             </li>
             <li>
@@ -61,10 +75,18 @@ export const NavBar = () => {
             </li>
             <li>
               <NavLink
-                to="/tjanster"
+                to="/flyglar"
                 onClick={closeMenu}
                 className={({ isActive }) => (isActive ? "active-link" : "")}>
-                Tjänster
+                Flyglar
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/butik"
+                onClick={closeMenu}
+                className={({ isActive }) => (isActive ? "active-link" : "")}>
+                Butiken
               </NavLink>
             </li>
             <li>
@@ -100,11 +122,18 @@ export const NavBar = () => {
         <ul className="navigation">
           <li>
             <NavLink
-              to="/butik"
+              to="/tjanster"
               className={({ isActive }) => (isActive ? "active-link" : "")}>
-              Butiken
+              Tjänster
             </NavLink>
-          </li>
+          </li>{" "}
+          <li>
+            <NavLink
+              to="/pianon"
+              className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Pianon
+            </NavLink>
+          </li>{" "}
           <li>
             <NavLink
               to="/flyglar"
@@ -114,16 +143,9 @@ export const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="/pianon"
+              to="/butik"
               className={({ isActive }) => (isActive ? "active-link" : "")}>
-              Pianon
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/tjanster"
-              className={({ isActive }) => (isActive ? "active-link" : "")}>
-              Tjänster
+              Butiken
             </NavLink>
           </li>
           <li>
