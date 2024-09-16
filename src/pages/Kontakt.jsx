@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { MapSection } from "../components/LandingPage/MapSection"
-import { ProductPage } from "../components/ProductPage"
+import { ProductPage } from "../components/ProductPage/ProductPage"
 
 export const Kontakt = () => {
   useEffect(() => {

@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { ProductPage } from "../components/ProductPage"
+import { ProductPage } from "../components/ProductPage/ProductPage"
 
 export const Flyglar = () => {
   useEffect(() => {
