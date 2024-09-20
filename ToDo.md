@@ -1,5 +1,6 @@
 fix & styling
 🦋 review paddings, font sizing, etc
+🦋 Frågor och svar? 
 
 optimization
 🦋 consider putting images elsewhere (cloudinary)/svg files/smaller size
@@ -10,7 +11,6 @@ backend
 🦋 email backend
 
 Review
-🦋 emilia review
 🦋 Linus review
 
 Done
@@ -19,3 +19,4 @@ Done
 ✅ image gallery grid styling
 ✅ remove img not needed in assets
 ✅ not-found
+✅ emilia review

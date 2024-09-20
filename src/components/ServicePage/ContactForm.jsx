@@ -63,9 +63,8 @@ export const ContactForm = () => {
                 value={formData.phone}
                 onChange={handleChange}
               />
-            </div>{" "}
+            </div>
           </div>
-
           <div className="form-group">
             <label htmlFor="message">Meddelande</label>
             <textarea
@@ -76,7 +75,18 @@ export const ContactForm = () => {
               required
             />
           </div>
-
+          <p className="disclaimer-text">
+            <i>
+              Ditt meddelande skickas till vår e-postadress, och din
+              kontaktinformation används endast som avsändare på mailet så att
+              vi kan svara på ditt meddelande. Om du inte godkänner, var vänlig
+              ring eller maila istället.
+            </i>
+          </p>
+          <label>
+            <input type="checkbox" required /> Jag godkänner att min information
+            används för att skicka mitt meddelande.
+          </label>{" "}
           <button type="submit" className="submit-button">
             Skicka
           </button>

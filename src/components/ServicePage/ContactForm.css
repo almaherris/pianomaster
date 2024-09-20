@@ -1,7 +1,7 @@
 .contact-form-wrapper {
   margin: 0 auto;
   padding: 80px 40px;
-  background-color: #f7f7f7;
+  background-color: #eae9e9;
 }
 
 .contact-form-info {
@@ -47,7 +47,7 @@ textarea {
   padding: 10px;
   border: 0;
   font-size: 14px;
-  background-color: #d9d9d9;
+  background-color: #f7f7f7;
 }
 
 textarea {
@@ -57,7 +57,7 @@ textarea {
 
 .submit-button {
   padding: 12px 20px;
-  background-color: #d9d9d9;
+  background-color: #cecece;
   border: none;
   font-size: 14px;
   cursor: pointer;
@@ -65,7 +65,12 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: #b2b1b1;
+  background-color: var(--black);
+  color: white;
+}
+
+.disclaimer-text {
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
