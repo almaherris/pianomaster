@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./ContactForm.css"
 
 export const ContactForm = () => {
@@ -8,6 +8,18 @@ export const ContactForm = () => {
     phone: "",
     message: "",
   })
+
+  const [isFormValid, setIsFormValid] = useState(false)
+
+  useEffect(() => {
+    // Check if required fields are filled
+    const { name, email, message } = formData
+    if (name && email && message) {
+      setIsFormValid(true)
+    } else {
+      setIsFormValid(false)
+    }
+  }, [formData])
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -84,10 +96,13 @@ export const ContactForm = () => {
             </i>
           </p>
           <label>
-            <input type="checkbox" required /> Jag godkänner att min information
+            <input className="form-checkbox" type="checkbox" required /> Jag godkänner att min information
             används för att skicka mitt meddelande.
           </label>{" "}
-          <button type="submit" className="submit-button">
+          <button
+            type="submit"
+            className={`submit-button ${isFormValid ? "active" : "inactive"}`}
+            disabled={!isFormValid}>
             Skicka
           </button>
         </form>

@@ -64,9 +64,18 @@ textarea {
   width: 200px;
 }
 
-.submit-button:hover {
+.submit-button.active {
   background-color: var(--black);
   color: white;
+  cursor: pointer;
+}
+
+.submit-button.inactive {
+  cursor: not-allowed;
+}
+
+.form-checkbox {
+  cursor: pointer;
 }
 
 .disclaimer-text {
