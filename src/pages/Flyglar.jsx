@@ -24,8 +24,8 @@ export const Flyglar = () => {
       <ProductPage
         title="Flyglar"
         description={[
-          "Våra flyglar representerar det ultimata inom pianokonst och hantverksskicklighet. Med enastående resonans och en dynamisk ton som fyller rummet, är varje flygel skapad för att möta de högsta kraven från professionella musiker och konserthus.",
-          "Kombinationen av elegant design och överlägsen akustik gör våra flyglar till ett naturligt val för de som söker en djupare musikalisk upplevelse. Låt dig inspireras av den tidlösa skönheten och det kraftfulla ljudet som bara en flygel kan erbjuda.",
+          "Utforska vårt omfattande sortiment av både nya och renoverade flyglar i Skövde och Linköping, designade för att möta de högsta kraven från både professionella musiker och entusiaster. Våra flyglar har enastående resonans och en dynamisk ton som fyller rummet, vilket ger en fantastisk musikupplevelse.",
+          "Vi erbjuder även tjänster för att stämma flygel och renovera flygel, så att ditt instrument alltid presterar på topp. Om du behöver hjälp med att flytta flygel, kan vi också erbjuda professionell transport.",
           "Här finner du ett ungefärligt utbud av flyglar som finns i vårt showroom.",
         ]}
         section={<Gallery images={flygelImages} />}

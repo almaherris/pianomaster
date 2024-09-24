@@ -27,12 +27,12 @@ export const Piano = () => {
       <ProductPage
         title="Piano"
         description={[
-          "Våra pianon erbjuder en harmonisk blandning av klassisk skönhet och modern teknik. Varje piano är noggrant tillverkat för att ge en rik och uttrycksfull klang, perfekt för både nybörjare och erfarna musiker.",
-          "Med högkvalitativa material och precision i varje detalj, är våra pianon utformade för att inspirera till kreativitet och musikalisk utveckling. Oavsett om du spelar för egen njutning eller inför publik, kommer du att upptäcka ett instrument som levererar på alla nivåer.",
-          "Här finner du ett ungefärligt utbud av pianon som finns i vårt showroom."
+          "Vi erbjuder ett brett utbud av nya och renoverade pianon i Skövde och Linköping. Våra pianon är noggrant tillverkade för att ge en rik och klar klang, vilket gör dem perfekta för både nybörjare och erfarna musiker.",
+          "Vi specialiserar oss på pianostämning och kan hjälpa dig att stämma ditt piano så att det alltid låter som bäst. Dessutom erbjuder vi tjänster för att flytta och renovera piano, så att du kan få ditt instrument i toppskick.",
+          "Om du behöver ett piano för en kortare period, kan du även hyra piano från oss.",
+          "Här finner du ett ungefärligt utbud av pianon som finns i vårt showroom.",
         ]}
         section={<Gallery images={pianoImages} />}
-
       />
     </div>
   )

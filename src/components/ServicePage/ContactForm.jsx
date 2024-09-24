@@ -1,7 +1,8 @@
+import PropTypes from "prop-types"
 import { useState, useEffect } from "react"
 import "./ContactForm.css"
 
-export const ContactForm = () => {
+export const ContactForm = ({ introText }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -67,7 +68,7 @@ export const ContactForm = () => {
     <div className="contact-form-wrapper">
       <div className="contact-form-container">
         <div className="contact-form-info">
-          <h3>Frågor?</h3>
+          <h3>{introText}</h3>
           <h2>Kontakta oss</h2>
         </div>
         <form onSubmit={handleSubmit} method="post">
@@ -126,4 +127,8 @@ export const ContactForm = () => {
       </div>
     </div>
   )
+}
+
+ContactForm.propTypes = {
+  introText: PropTypes.string.isRequired,
 }

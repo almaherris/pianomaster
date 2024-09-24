@@ -14,8 +14,8 @@ export const WelcomeSection = () => {
         Blüthner, Grotrian Steinweg, Schimmel, Steinway och Malmsjö.
       </p>
       <p>
-        säljer - köper - renovering - pianostämning - lackering - transport -
-        uthyrning
+        Säljer - Köper - Renovering - Pianostämning - Lackering - Transport -
+        Uthyrning
       </p>
 
       <div className="button-div">

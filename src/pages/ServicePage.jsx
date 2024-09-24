@@ -48,7 +48,7 @@ export const Services = () => {
           ))}
         </div>
       </div>
-      <ContactForm />
+      <ContactForm introText="Hittar du inte det du behöver? Gör en förfrågan här!" />
     </>
   )
 }

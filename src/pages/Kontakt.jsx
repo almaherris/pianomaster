@@ -24,7 +24,7 @@ export const Kontakt = () => {
         </div>
       </div>
       <MapSection />
-      <ContactForm />
+      <ContactForm introText="Frågor?" />
     </div>
   )
 }
