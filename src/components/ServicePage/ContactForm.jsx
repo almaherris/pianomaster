@@ -42,7 +42,10 @@ export const ContactForm = () => {
           <h3>Frågor?</h3>
           <h2>Kontakta oss</h2>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          action="https://httpbin.org/post"
+          method="post">
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="name">Namn</label>
@@ -96,8 +99,9 @@ export const ContactForm = () => {
             </i>
           </p>
           <label>
-            <input className="form-checkbox" type="checkbox" required /> Jag godkänner att min information
-            används för att skicka mitt meddelande.
+            <input className="form-checkbox" type="checkbox" required /> Jag
+            godkänner att min information används för att skicka mitt
+            meddelande.
           </label>{" "}
           <button
             type="submit"
