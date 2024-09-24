@@ -7,13 +7,12 @@ export const CTA = () => {
       <div className="cta-box">
         <div className="cta-text">
           <p>Har du några funderingar?</p>
-          <h4>FRÅGOR OCH SVAR</h4>
+          <h4>KONTAKTA OSS</h4>
           <p>
-            Här hittar du våra kontaktuppgifter samt svar på de vanligaste
-            frågorna
+            Här hittar du våra kontaktuppgifter och mer information om oss!{" "}
           </p>
           <Button
-            buttonText="Kontakta Oss"
+            buttonText="Till Kontakt"
             link="/kontakt"
             aria-label="Gå till kontaktsida"
             variant="alternate"

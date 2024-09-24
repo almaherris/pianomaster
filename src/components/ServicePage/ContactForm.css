@@ -57,6 +57,7 @@ textarea {
 
 .submit-button {
   padding: 12px 20px;
+  margin-top: 20px;
   background-color: #cecece;
   border: none;
   font-size: 14px;
@@ -76,10 +77,6 @@ textarea {
 
 .form-checkbox {
   cursor: pointer;
-}
-
-.disclaimer-text {
-  font-size: 14px;
 }
 
 @media (min-width: 768px) {

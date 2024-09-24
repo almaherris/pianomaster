@@ -21,7 +21,7 @@ export const LandingPage = () => {
         <div className="offer-wrapper">
           <OfferSection
             title="Piano"
-            description="Våra pianon erbjuder en harmonisk blandning av klassisk skönhet och modern teknik. Varje piano är noggrant tillverkat för att ge en rik och uttrycksfull klang, perfekt för både nybörjare och erfarna musiker. Med högkvalitativa material och precision i varje detalj, är våra pianon utformade för att inspirera till kreativitet och musikalisk utveckling. Oavsett om du spelar för egen njutning eller inför publik, kommer du att upptäcka ett instrument som levererar på alla nivåer."
+            description="Vi jobbar med allt som rör pianon: försäljning, köp, renovering, pianostämning, lackering, transport och uthyrning. Våra instrument kombinerar klassisk stil med modern teknik, vilket gör dem perfekta för både nybörjare och erfarna musiker. Oavsett om du vill spela hemma eller uppträda, har vi det du behöver!"
             buttonText="Till Pianon"
             link="/pianon"
             ariaLabel="Se mer information om pianon"
@@ -30,7 +30,7 @@ export const LandingPage = () => {
           />
           <OfferSection
             title="Flygel"
-            description="Våra flyglar representerar det ultimata inom pianokonst och hantverksskicklighet. Med enastående resonans och en dynamisk ton som fyller rummet, är varje flygel skapad för att möta de högsta kraven från professionella musiker och konserthus. Kombinationen av elegant design och överlägsen akustik gör våra flyglar till ett naturligt val för de som söker en djupare musikalisk upplevelse. Låt dig inspireras av den tidlösa skönheten och det kraftfulla ljudet som bara en flygel kan erbjuda."
+            description="Våra flyglar erbjuder en fantastisk ljudkvalitet och elegant design, perfekt för både professionella musiker och konserthus. Vi jobbar med försäljning, köp, renovering, stämning, transport och uthyrning, så att du får det stöd du behöver för en perfekt musikalisk upplevelse."
             buttonText="Till Flyglar"
             link="/flyglar"
             ariaLabel="Se mer information om flyglar"

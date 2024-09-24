@@ -10,6 +10,7 @@ export const ContactForm = () => {
   })
 
   const [isFormValid, setIsFormValid] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState("")
 
   useEffect(() => {
     // Check if required fields are filled
@@ -29,10 +30,37 @@ export const ContactForm = () => {
     })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    // Handle form submission logic here
+  const handleSubmit = async (e) => {
+    e.preventDefault() // Prevent default form submission
+    //Handle submit logic here, to update
+    try {
+      const response = await fetch("https://httpbin.org/post", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+      console.log("Form submitted successfully:", result)
+      setSubmitMessage(
+        "Ditt meddelande har skickats! Vi hör av oss via mail inom de närmsta dagarna."
+      )
+
+      //Form submitted successfully - clear data
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      })
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      setSubmitMessage(
+        "Ditt meddelande kunde inte skickas. Vänligen försök igen eller maila oss på info@pianomaster.se."
+      )
+    }
   }
 
   return (
@@ -42,10 +70,7 @@ export const ContactForm = () => {
           <h3>Frågor?</h3>
           <h2>Kontakta oss</h2>
         </div>
-        <form
-          onSubmit={handleSubmit}
-          action="https://httpbin.org/post"
-          method="post">
+        <form onSubmit={handleSubmit} method="post">
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="name">Namn</label>
@@ -90,19 +115,7 @@ export const ContactForm = () => {
               required
             />
           </div>
-          <p className="disclaimer-text">
-            <i>
-              Ditt meddelande skickas till vår e-postadress, och din
-              kontaktinformation används endast som avsändare på mailet så att
-              vi kan svara på ditt meddelande. Om du inte godkänner, var vänlig
-              ring eller maila istället.
-            </i>
-          </p>
-          <label>
-            <input className="form-checkbox" type="checkbox" required /> Jag
-            godkänner att min information används för att skicka mitt
-            meddelande.
-          </label>{" "}
+          {submitMessage && <p className="success-message">{submitMessage}</p>}
           <button
             type="submit"
             className={`submit-button ${isFormValid ? "active" : "inactive"}`}

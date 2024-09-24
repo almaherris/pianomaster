@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { MapSection } from "../components/LandingPage/MapSection"
 import { ProductPage } from "../components/ProductPage/ProductPage"
 import LinusImg from "../assets/linus.jpg"
+import { ContactForm } from "../components/ServicePage/ContactForm"
 
 export const Kontakt = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ export const Kontakt = () => {
         </div>
       </div>
       <MapSection />
+      <ContactForm />
     </div>
   )
 }
