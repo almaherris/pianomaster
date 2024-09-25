@@ -8,18 +8,36 @@ export const Piano = () => {
   }, [])
 
   const pianoImages = [
-    { src: "/piano/piano1.jpg" },
-    { src: "/piano/piano2.jpg" },
-    { src: "/piano/piano3.jpg" },
-    { src: "/piano/piano4.jpg" },
-    { src: "/piano/piano5.jpg" },
-    { src: "/piano/piano6.jpg" },
-    { src: "/piano/piano7.jpg" },
-    { src: "/piano/piano8.jpg" },
-    { src: "/piano/piano9.jpg" },
-    { src: "/piano/piano10.jpg" },
-    { src: "/piano/piano11.jpg" },
-    { src: "/piano/piano12.jpg" },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279811/piano1_eqn40h.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279857/piano2_vdwoqh.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279882/piano3_w65duo.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279881/piano4_s8lo2w.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279882/piano5_jbfe1c.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279883/piano6_nfzg53.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279882/piano7_kmj2ob.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279882/piano8_v3pxsk.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279883/piano9_o7bfqn.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279885/piano10_fiq77l.jpg",
+    },
   ]
 
   return (

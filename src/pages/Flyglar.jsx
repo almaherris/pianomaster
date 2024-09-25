@@ -8,15 +8,33 @@ export const Flyglar = () => {
   }, [])
 
   const flygelImages = [
-    { src: "/flygel/flygel1.jpg" },
-    { src: "/flygel/flygel2.jpg" },
-    { src: "/flygel/flygel3.jpg" },
-    { src: "/flygel/flygel4.jpg" },
-    { src: "/flygel/flygel5.jpg" },
-    { src: "/flygel/flygel6.jpg" },
-    { src: "/flygel/flygel7.jpg" },
-    { src: "/flygel/flygel8.jpg" },
-    { src: "/flygel/flygel9.jpg" },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279804/flygel1_oh6jvl.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279804/flygel2_htr42g.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279805/flygel3_gbwpub.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279805/flygel4_k7vhoi.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279805/flygel5_tdqs7z.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279806/flygel6_sthsmp.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279806/flygel7_ejrtyn.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279809/flygel8_diebsl.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279810/flygel9_dlcxpr.jpg",
+    },
   ]
 
   return (
