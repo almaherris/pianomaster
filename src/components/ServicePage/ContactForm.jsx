@@ -12,7 +12,7 @@ export const ContactForm = ({ introText }) => {
   })
 
   const [isFormValid, setIsFormValid] = useState(false)
-  //const [submitMessage, setSubmitMessage] = useState("")
+  const [submitMessage, setSubmitMessage] = useState("")
   const [state, handleFormSubmit] = useForm("xdknrqod")
 
   useEffect(() => {
@@ -33,42 +33,21 @@ export const ContactForm = ({ introText }) => {
     })
   }
 
-  /*const handleSubmit = async (e) => {
-    e.preventDefault() // Prevent default form submission
-    //Handle submit logic here, to update to send it to email adress
-    try {
-      const response = await fetch("https://httpbin.org/post", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-
-      const result = await response.json()
-      console.log("Form submitted successfully:", result)
+  // Handle form submission
+  useEffect(() => {
+    if (state.succeeded) {
       setSubmitMessage(
         "Ditt meddelande har skickats! Vi hör av oss inom de närmsta dagarna."
       )
-
-      //Form submitted successfully - clear data
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      })
-    } catch (error) {
-      console.error("Error submitting form:", error)
+      // Clear form data
+      setFormData({ name: "", email: "", phone: "", message: "" })
+    } else if (Array.isArray(state.errors) && state.errors.length > 0) {
       setSubmitMessage(
         "Ditt meddelande kunde inte skickas. Vänligen försök igen eller maila oss på info@pianomaster.se."
       )
     }
-  }*/
+  }, [state])
 
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>
-  }
   return (
     <div className="contact-form-wrapper">
       <div className="contact-form-container">
@@ -122,7 +101,7 @@ export const ContactForm = ({ introText }) => {
               required
             />
           </div>
-          {/* {submitMessage && <p className="success-message">{submitMessage}</p>} */}
+          {submitMessage && <p className="success-message">{submitMessage}</p>}
           <button
             type="submit"
             className={`submit-button ${isFormValid ? "active" : "inactive"}`}
