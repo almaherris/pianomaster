@@ -42,5 +42,9 @@ export const Gallery = ({ images }) => {
 }
 
 Gallery.propTypes = {
-  images: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 }
