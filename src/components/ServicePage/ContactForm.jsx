@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import { useState, useEffect } from "react"
+import { useForm } from "@formspree/react"
 import "./ContactForm.css"
 
 export const ContactForm = ({ introText }) => {
@@ -11,7 +12,8 @@ export const ContactForm = ({ introText }) => {
   })
 
   const [isFormValid, setIsFormValid] = useState(false)
-  const [submitMessage, setSubmitMessage] = useState("")
+  //const [submitMessage, setSubmitMessage] = useState("")
+  const [state, handleFormSubmit] = useForm("xdknrqod")
 
   useEffect(() => {
     // Check if required fields are filled
@@ -31,9 +33,9 @@ export const ContactForm = ({ introText }) => {
     })
   }
 
-  const handleSubmit = async (e) => {
+  /*const handleSubmit = async (e) => {
     e.preventDefault() // Prevent default form submission
-    //Handle submit logic here, to update
+    //Handle submit logic here, to update to send it to email adress
     try {
       const response = await fetch("https://httpbin.org/post", {
         method: "POST",
@@ -46,7 +48,7 @@ export const ContactForm = ({ introText }) => {
       const result = await response.json()
       console.log("Form submitted successfully:", result)
       setSubmitMessage(
-        "Ditt meddelande har skickats! Vi hör av oss via mail inom de närmsta dagarna."
+        "Ditt meddelande har skickats! Vi hör av oss inom de närmsta dagarna."
       )
 
       //Form submitted successfully - clear data
@@ -62,8 +64,11 @@ export const ContactForm = ({ introText }) => {
         "Ditt meddelande kunde inte skickas. Vänligen försök igen eller maila oss på info@pianomaster.se."
       )
     }
-  }
+  }*/
 
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>
+  }
   return (
     <div className="contact-form-wrapper">
       <div className="contact-form-container">
@@ -71,7 +76,7 @@ export const ContactForm = ({ introText }) => {
           <h3>{introText}</h3>
           <h2>Kontakta oss</h2>
         </div>
-        <form onSubmit={handleSubmit} method="post">
+        <form onSubmit={handleFormSubmit} method="post">
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="name">Namn</label>
@@ -111,12 +116,13 @@ export const ContactForm = ({ introText }) => {
             <textarea
               id="message"
               name="message"
+              minLength="10"
               value={formData.message}
               onChange={handleChange}
               required
             />
           </div>
-          {submitMessage && <p className="success-message">{submitMessage}</p>}
+          {/* {submitMessage && <p className="success-message">{submitMessage}</p>} */}
           <button
             type="submit"
             className={`submit-button ${isFormValid ? "active" : "inactive"}`}

@@ -8,14 +8,30 @@ export const Butik = () => {
   }, [])
 
   const butikImages = [
-    { src: "/butik/butik1.jpg" },
-    { src: "/butik/butik2.jpg" },
-    { src: "/butik/butik3.jpg" },
-    { src: "/butik/butik4.jpg" },
-    { src: "/butik/butik5.jpg" },
-    { src: "/butik/butik6.jpg" },
-    { src: "/butik/butik7.jpg" },
-    { src: "/butik/butik8.jpg" },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279798/butik1_weijb1.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279798/butik2_fenq3i.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279798/butik3_ggcg02.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279798/butik4_pcspm8.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279798/butik5_ptbz1y.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279799/butik6_on6bfs.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279798/butik7_t7pqak.jpg",
+    },
+    {
+      src: "https://res.cloudinary.com/dcowhgigh/image/upload/v1727279798/butik8_okvlti.jpg",
+    },
   ]
 
   return (

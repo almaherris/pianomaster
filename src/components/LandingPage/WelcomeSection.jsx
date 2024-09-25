@@ -27,8 +27,8 @@ export const WelcomeSection = () => {
       </div>
 
       <div className="partners">
-        <img src="/logos/feurich-logo.svg" />
-        <img src="/logos/steinberg-logo.svg" />
+        <img src="/logos/feurich-logo.svg" alt="Feurich Logo" />
+        <img src="/logos/steinberg-logo.svg" alt="Steinberg Logo" />
       </div>
     </div>
   )

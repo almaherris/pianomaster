@@ -3,6 +3,7 @@ import { useState } from "react"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
 import "./Gallery.css"
+import { getOptimizedUrl } from "../../util/utils"
 
 export const Gallery = ({ images }) => {
   const [open, setOpen] = useState(false)
@@ -15,7 +16,7 @@ export const Gallery = ({ images }) => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={image.src}
+            src={getOptimizedUrl(image.src, 650)}
             alt={`Gallery Image ${index + 1}`}
             className="image-grid-item"
             onClick={() => {
