@@ -1,9 +1,6 @@
-optimization
-🦋 consider putting images elsewhere (cloudinary)/svg files/smaller size
 🦋 SEO
-
-backend
-🦋 email backend
-
-Review
+🦋 Connect custom domain
+🦋 Review texts
 🦋 Linus review
+🦋 XSS 
+🦋 CAPTCHA

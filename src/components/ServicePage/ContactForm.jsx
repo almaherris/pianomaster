@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import { useState, useEffect } from "react"
 import { useForm } from "@formspree/react"
+import DOMPurify from "dompurify" // Import DOMPurify
 import "./ContactForm.css"
 
 export const ContactForm = ({ introText }) => {
@@ -34,6 +35,26 @@ export const ContactForm = ({ introText }) => {
   }
 
   // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    // Sanitize form data before submitting
+    const sanitizedFormData = {
+      name: DOMPurify.sanitize(formData.name),
+      email: DOMPurify.sanitize(formData.email),
+      phone: DOMPurify.sanitize(formData.phone),
+      message: DOMPurify.sanitize(formData.message),
+    }
+
+    handleFormSubmit({
+      name: sanitizedFormData.name,
+      email: sanitizedFormData.email,
+      phone: sanitizedFormData.phone,
+      message: sanitizedFormData.message,
+    })
+  }
+
+  // Handle form submission
   useEffect(() => {
     if (state.succeeded) {
       setSubmitMessage(
@@ -55,7 +76,7 @@ export const ContactForm = ({ introText }) => {
           <h3>{introText}</h3>
           <h2>Kontakta oss</h2>
         </div>
-        <form onSubmit={handleFormSubmit} method="post">
+        <form onSubmit={handleSubmit} method="post">
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="name">Namn</label>
